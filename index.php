@@ -2,7 +2,7 @@
   require('header.php');
   ?>
   
-  <form method="GET" action="recebedor.php">
+  <form method="POST" action="recebedor.php">
     <label>
       Nome:
       <br/>
