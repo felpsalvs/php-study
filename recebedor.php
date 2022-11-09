@@ -7,6 +7,9 @@ $idade = filter_input(INPUT_POST, 'idade', FILTER_VALIDATE_INT);
 $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
 
 if($nome && $email && $idade) {
+  $expiracao = time() + (86400 * 30);
+  setcookie('nome', $nome, $expericao);
+  
   echo 'NOME: '.$nome."<br/>";
   echo 'EMAIL: '.$email."<br/>";
   echo 'IDADE: '.$idade;
