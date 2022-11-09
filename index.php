@@ -1,37 +1,15 @@
-<?php
-  session_start();
-  require('header.php');
+<html>
+  <head>
+    <title>PHP Test</title>
+  </head>
+  <body>
+    <?php echo '<p>Hello World</p>'; ?> 
 
-  if($_SESSION['aviso']){
-    echo $_SESSION['aviso'];
-    $_SESSION['aviso'] = '';
-  }
-  ?>
-  
-  <form method="POST" action="recebedor.php">
-    <label>
-      Nome:
-      <br/>
-      <input type="text" name="nome"/>
-     </label>
-     <br/>
-     <br/>
-    
-     <label>
-      Email:
-      <br/>
-      <input type="text" name="email"/>
-     </label>
-     <br/>
-     <br/>
-    
-     <label>
-      Idade:
-        <br/>
-        <input type="text" name="idade"/>
-       </label>
-       <br/>
-       <br/>
-       
-       <input type="submit" value="Enviar"/>
-    </form>
+    <!--
+    This script places a badge on your repl's full-browser view back to your repl's cover
+    page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+    teal, blue, blurple, magenta, pink!
+    -->
+    <script src="https://replit.com/public/js/replit-badge.js" theme="dark" defer></script> 
+  </body>
+</html>
